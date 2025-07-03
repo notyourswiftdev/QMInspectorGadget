@@ -6,4 +6,13 @@
 //
 
 import Foundation
+import ObjectiveC
+
+public class QMTextChangeLogger {
+    public static let shared = QMTextChangeLogger()
+    
+    public init() {
+        
+    }
+}
 
