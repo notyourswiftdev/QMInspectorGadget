@@ -7,7 +7,3 @@ public extension UILabel {
         print("[INSPECTOR GADGET - LOGGING] - UILabel: \(self) text changed to: \(text)")
     }
 }
-
-public extension UIViewController {
-    
-}

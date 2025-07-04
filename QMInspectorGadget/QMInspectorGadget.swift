@@ -1,15 +1,29 @@
 import Foundation
+import UIKit
 import ObjectiveC
 
 public class QMInspectorGadget {
     public static let shared = QMInspectorGadget()
+    private static var didSwizzle = false
     
     public init() {
-        
+        self.swizzleTextSetter()
     }
     
     public func loggingScreenName(screenName: String) {
         print("[INSPECTOR GADGET - LOGGING] - Screen Name: \(screenName)")
+    }
+    
+    private func swizzleTextSetter() {
+        guard !Self.didSwizzle else { return }
+        Self.didSwizzle = true
+        let anyClass: AnyClass = UILabel.self
+        let originalSelector = #selector(setter: UILabel.text)
+        let swizzledSelector = #selector(UILabel.qmSetText(_:))
+        
+        guard let originalMethod = class_getInstanceMethod(anyClass, originalSelector),
+              let swizzledMethod = class_getInstanceMethod(anyClass, swizzledSelector) else { return }
+        method_exchangeImplementations(originalMethod, swizzledMethod)
     }
 }
 
