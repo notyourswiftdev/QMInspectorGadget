@@ -23,7 +23,6 @@
 /* Begin PBXFileReference section */
 		ED7C19C82E1636CE008E6095 /* QMInspectorGadget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QMInspectorGadget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7C19D32E1636CE008E6095 /* QMInspectorGadgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QMInspectorGadgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED7C1A1B2E163E65008E6095 /* QMInspectorGadgetDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QMInspectorGadgetDemo.xcodeproj; path = ../QMInspectorGadgetDemo/QMInspectorGadgetDemo.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -61,7 +60,6 @@
 		ED7C19BE2E1636CE008E6095 = {
 			isa = PBXGroup;
 			children = (
-				ED7C1A1B2E163E65008E6095 /* QMInspectorGadgetDemo.xcodeproj */,
 				ED7C19CA2E1636CE008E6095 /* QMInspectorGadget */,
 				ED7C19D72E1636CE008E6095 /* QMInspectorGadgetTests */,
 				ED7C19C92E1636CE008E6095 /* Products */,
@@ -73,13 +71,6 @@
 			children = (
 				ED7C19C82E1636CE008E6095 /* QMInspectorGadget.framework */,
 				ED7C19D32E1636CE008E6095 /* QMInspectorGadgetTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		ED7C1A1E2E163E65008E6095 /* Products */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,12 +164,6 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ED7C19C92E1636CE008E6095 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = ED7C1A1E2E163E65008E6095 /* Products */;
-					ProjectRef = ED7C1A1B2E163E65008E6095 /* QMInspectorGadgetDemo.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				ED7C19C72E1636CE008E6095 /* QMInspectorGadget */,
